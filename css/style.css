@@ -680,8 +680,8 @@ footer {
 
     .logo-grande {
         display: block;
-        width: 85%;
-        max-width: 85%;
+        width: 120%;
+        max-width: 200%;
         height: auto;
         margin: 0 auto;
     }
