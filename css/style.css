@@ -671,20 +671,33 @@ footer {
 /* RESPONSIVE           */
 /* ==================== */
 @media (max-width: 768px) {
-     #header-logo {
-        height: 250px;
+    
+    #header-logo {
+        background: #000;
+        height: auto;
+        padding: 18px 10px;
+        overflow: visible;
     }
 
     .logo-grande {
-        max-height: 350px;
-        max-width: 200%;
-        width: auto;
+        display: block;
+        width: 92%;
+        max-width: 340px;
+        height: auto;
+        max-height: none;
+        margin: 0 auto;
+    }
+
+    #menu-principale {
+        padding: 10px 0;
     }
 
     #menu-principale a {
         display: inline-block;
-        margin: 8px 10px;
+        margin: 6px 8px;
+        font-size: 15px;
     }
+
 
     main {
         padding: 20px 15px 40px;
