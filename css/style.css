@@ -676,7 +676,8 @@ footer {
     }
 
     .logo-grande {
-        max-height: 250px;
+        max-height: 350px;
+        max-width: 200%;
         width: auto;
     }
 
