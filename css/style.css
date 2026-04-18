@@ -672,11 +672,12 @@ footer {
 /* ==================== */
 @media (max-width: 768px) {
     #header-logo {
-        height: 200px;
+        height: 220px;
     }
 
     .logo-grande {
-        max-height: 200px;
+        max-height: 170px;
+        max-width: 90%;
         width: auto;
     }
 
