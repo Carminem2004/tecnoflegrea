@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoflegrea</title>
+    <meta name="description" content="Tecnoflegrea si occupa di installazione e manutenzione di cancelli automatici, impianti citofonici, automazioni e impianti elettrici a Napoli e nei Campi Flegrei.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div id="header-logo">
+        <img src="immagini/logo-tecnoflegrea.svg" alt="Logo Tecnoflegrea" class="logo-grande">
+    </div>
+
+    <nav id="menu-principale">
+        <a href="index.html">Home</a>
+        <a href="pagine/azienda.html">Azienda</a>
+        <a href="pagine/servizi.html">Servizi</a>
+        <a href="pagine/contatti.html">Contatti</a>
+    </nav>
+</header>
+
+<main>
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Automazioni e impianti elettrici per case, aziende e condomini</h1>
+
+            <p>
+                Tecnoflegrea realizza installazioni, manutenzioni e assistenza tecnica
+                per cancelli automatici, citofoni, videocitofoni e impianti elettrici.
+            </p>
+
+            <a href="pagine/contatti.html" class="btn-hero">Richiedi un preventivo</a>
+        </div>
+    </section>
+
+    <section id="intro" class="animazione">
+        <h2>Professionalità, affidabilità e interventi rapidi</h2>
+
+        <p>
+            Tecnoflegrea è specializzata nell'installazione, manutenzione e riparazione
+            di cancelli automatici, automazioni, impianti citofonici e impianti elettrici.
+        </p>
+
+        <p>
+            Operiamo al servizio di privati, aziende e condomini, offrendo soluzioni
+            sicure, funzionali e durature nel tempo.
+        </p>
+    </section>
+
+    <section id="servizi-home" class="animazione">
+        <h2>I nostri servizi</h2>
+
+        <div class="servizi-container">
+            <div class="servizio">
+                <h3><i class="fas fa-door-closed"></i> Cancelli automatici</h3>
+                <p>Installazione, manutenzione e riparazione di cancelli automatici per abitazioni, condomini e aziende.</p>
+            </div>
+
+            <div class="servizio">
+                <h3><i class="fas fa-robot"></i> Automazioni</h3>
+                <p>Sistemi di apertura e controllo per accessi automatizzati, porte e varchi carrabili e pedonali.</p>
+            </div>
+
+            <div class="servizio">
+                <h3><i class="fas fa-phone-volume"></i> Impianti citofonici</h3>
+                <p>Installazione, assistenza e aggiornamento di citofoni e videocitofoni per abitazioni e condomini.</p>
+            </div>
+
+            <div class="servizio">
+                <h3><i class="fas fa-bolt"></i> Impianti elettrici</h3>
+                <p>Realizzazione e manutenzione di impianti elettrici civili per case, attività e spazi comuni.</p>
+            </div>
+
+            <div class="servizio">
+                <h3><i class="fas fa-video"></i> Sicurezza e videosorveglianza</h3>
+                <p>Installazione di sistemi di allarme e videosorveglianza per migliorare protezione e controllo degli ambienti.</p>
+            </div>
+
+            <div class="servizio">
+                <h3><i class="fas fa-tools"></i> Assistenza tecnica</h3>
+                <p>Interventi rapidi per guasti, manutenzione ordinaria e straordinaria su impianti e automazioni.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vantaggi" class="animazione">
+        <h2>Perché scegliere Tecnoflegrea</h2>
+
+        <div class="vantaggi-container">
+            <div class="vantaggio">
+                <h3>Esperienza</h3>
+                <p>Tecnici qualificati con esperienza nel settore delle automazioni e degli impianti elettrici.</p>
+            </div>
+
+            <div class="vantaggio">
+                <h3>Rapidità</h3>
+                <p>Assistenza veloce e interventi tempestivi per risolvere guasti e necessità operative.</p>
+            </div>
+
+            <div class="vantaggio">
+                <h3>Affidabilità</h3>
+                <p>Utilizziamo materiali e componenti di qualità per garantire sicurezza e durata nel tempo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="zona-servizio" class="animazione">
+        <h2>Dove operiamo</h2>
+
+        <p>
+            Tecnoflegrea opera principalmente nei Campi Flegrei, a Napoli e in provincia,
+            offrendo assistenza e installazioni per abitazioni private, aziende e condomini.
+        </p>
+    </section>
+
+    <section id="cta-home" class="animazione">
+        <h2>Hai bisogno di assistenza?</h2>
+
+        <p>
+            Contattaci per ricevere informazioni, supporto tecnico o un preventivo gratuito
+            per il tuo impianto o la tua automazione.
+        </p>
+
+        <a href="pagine/contatti.html" class="btn">Contattaci</a>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-contenuto">
+        <p>© 2026 Tecnoflegrea</p>
+    </div>
+</footer>
+
+<a href="https://wa.me/393337295271" target="_blank" class="whatsapp-float">
+    <img src="immagini/whatsapp.png" alt="WhatsApp">
+</a>
+
+<script>
+const elementi = document.querySelectorAll('.animazione');
+
+function mostraElementi() {
+    elementi.forEach(el => {
+        const posizione = el.getBoundingClientRect().top;
+        const altezzaSchermo = window.innerHeight;
+
+        if (posizione < altezzaSchermo - 100) {
+            el.classList.add('attiva');
+        }
+    });
+}
+
+window.addEventListener('scroll', mostraElementi);
+window.addEventListener('load', mostraElementi);
+</script>
+
+</body>
+</html>

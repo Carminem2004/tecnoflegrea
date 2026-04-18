@@ -1,0 +1,741 @@
+/* ================================================== */
+/* CSS COMPLETO - Tecnoflegrea                        */
+/* Colori aziendali: rosso (#c00000) e nero (#000)    */
+/* ================================================== */
+
+/* ==================== */
+/* STILE GENERALE       */
+/* ==================== */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f0f0;
+    color: #222;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px 50px;
+}
+
+h1 {
+    color: #000;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.testo-sezione {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+/* ==================== */
+/* HEADER               */
+/* ==================== */
+#header-logo {
+    background: #000;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-grande {
+    max-height: 250%;
+    width: auto;
+}
+
+#menu-principale {
+    background: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#menu-principale a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-principale a:hover {
+    color: #c00000;
+}
+
+/* ==================== */
+/* FOOTER               */
+/* ==================== */
+footer {
+    background: #000;
+    color: #c00000;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-contenuto {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ==================== */
+/* BOTTONI GENERALI     */
+/* ==================== */
+.btn {
+    display: inline-block;
+    background: #c00000;
+    color: #fff;
+    padding: 13px 28px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #a00000;
+    transform: translateY(-2px);
+}
+
+.btn-hero {
+    display: inline-block;
+    background: #c00000;
+    color: #fff;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background: #a00000;
+    transform: translateY(-2px);
+}
+
+.btn-contatto {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #c00000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-contatto:hover {
+    background: #a00000;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #25D366, #1ebe5d);
+    color: #fff;
+    padding: 14px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-whatsapp i {
+    font-size: 20px;
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-whatsapp:active {
+    transform: scale(0.98);
+}
+
+/* ==================== */
+/* WHATSAPP FISSO       */
+/* ==================== */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+/* ==================== */
+/* ANIMAZIONI           */
+/* ==================== */
+.animazione {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.animazione.attiva {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== */
+/* HOME                 */
+/* ==================== */
+#hero {
+    background-image: url("../immagini/cancello-automatico.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 140px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 18px 18px;
+    overflow: hidden;
+}
+
+#hero h1 {
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.60);
+    padding: 45px 30px;
+    max-width: 850px;
+    margin: auto;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+#hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: #f2f2f2;
+}
+
+#intro {
+    background: #fff;
+    padding: 40px 30px;
+    margin-top: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+#servizi-home {
+    margin-top: 50px;
+}
+
+.servizi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.servizio {
+    flex: 1 1 280px;
+    max-width: 330px;
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 14px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servizio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.10);
+}
+
+.servizio h3 {
+    color: #c00000;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.servizio h3 i {
+    color: #c00000;
+    margin-right: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+#vantaggi {
+    margin-top: 55px;
+}
+
+.vantaggi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.vantaggio {
+    flex: 1 1 280px;
+    max-width: 330px;
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 14px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.vantaggio h3 {
+    color: #c00000;
+    margin-bottom: 12px;
+}
+
+#zona-servizio {
+    margin-top: 50px;
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+#cta-home {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 45px 25px;
+    border-radius: 14px;
+    margin-top: 50px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+#cta-home h2 {
+    color: #fff;
+}
+
+#cta-home p {
+    color: #f0f0f0;
+}
+
+/* ==================== */
+/* PAGINA AZIENDA       */
+/* ==================== */
+#intro-azienda {
+    background: #fff;
+    padding: 40px 30px;
+    margin-top: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+#intro-azienda h1 {
+    color: #c00000;
+    text-align: center;
+}
+
+#azienda-gallery {
+    margin-top: 50px;
+}
+
+#azienda-gallery h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.gallery-azienda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-azienda img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-azienda img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+#valori-azienda {
+    margin-top: 55px;
+}
+
+#cta-azienda {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 45px 25px;
+    border-radius: 14px;
+    margin-top: 50px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+#cta-azienda h2 {
+    color: #fff;
+}
+
+#cta-azienda p {
+    color: #f0f0f0;
+}
+
+/* ==================== */
+/* PAGINA SERVIZI       */
+/* ==================== */
+.servizi-intro {
+    background: #fff;
+    padding: 40px 30px;
+    margin-top: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.servizi-intro h1 {
+    color: #c00000;
+    text-align: center;
+}
+
+.servizio-card {
+    flex: 1 1 280px;
+    max-width: 330px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: comparsa 0.8s ease forwards;
+}
+
+.servizio-card:nth-child(1) { animation-delay: 0.1s; }
+.servizio-card:nth-child(2) { animation-delay: 0.2s; }
+.servizio-card:nth-child(3) { animation-delay: 0.3s; }
+.servizio-card:nth-child(4) { animation-delay: 0.4s; }
+.servizio-card:nth-child(5) { animation-delay: 0.5s; }
+.servizio-card:nth-child(6) { animation-delay: 0.6s; }
+
+.servizio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.servizio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.servizio-card h3 {
+    margin: 15px 0 10px;
+    color: #c00000;
+}
+
+.servizio-card p {
+    padding: 0 5px 10px;
+}
+
+.icona {
+    font-size: 40px;
+    margin: 15px 0;
+    color: #c00000;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.servizio-card:hover .icona {
+    transform: scale(1.15);
+    color: #a00000;
+}
+
+.lavori {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.lavori-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.lavori-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lavori-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.cta-servizi {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 45px 25px;
+    border-radius: 14px;
+    margin-top: 50px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.cta-servizi h2 {
+    color: #fff;
+}
+
+.cta-servizi p {
+    color: #f0f0f0;
+}
+
+@keyframes comparsa {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==================== */
+/* PAGINA CONTATTI      */
+/* ==================== */
+#contatti-intro {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
+#contatti-intro h1 {
+    color: #c00000;
+    text-align: center;
+}
+
+#contatto-principale {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+}
+
+.contatto-evidenza {
+    max-width: 720px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contatto-icona {
+    font-size: 38px;
+    color: #c00000;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contatto-item:hover .contatto-icona {
+    transform: scale(1.15);
+    color: #a00000;
+}
+
+.contatto-icona.grande {
+    font-size: 52px;
+    color: #25D366;
+}
+
+.nota-contatto {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+#contatti-secondari {
+    margin-top: 10px;
+}
+
+.contatti-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contatto-item {
+    flex: 1 1 250px;
+    max-width: 320px;
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contatto-item h2 {
+    margin-bottom: 10px;
+}
+
+.contatto-item a {
+    color: #c00000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contatto-item a:hover {
+    color: #a00000;
+}
+
+#orari-contatti {
+    margin-top: 40px;
+    text-align: center;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* ==================== */
+/* RESPONSIVE           */
+/* ==================== */
+@media (max-width: 768px) {
+    #header-logo {
+        height: 160px;
+    }
+
+    .logo-grande {
+        max-height: 120px;
+        width: auto;
+    }
+
+    #menu-principale a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    main {
+        padding: 20px 15px 40px;
+    }
+
+    #hero {
+        padding: 90px 15px;
+        border-radius: 0 0 14px 14px;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .servizio,
+    .vantaggio,
+    .servizio-card,
+    .contatto-item,
+    .contatto-evidenza {
+        max-width: 100%;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lavori-grid img {
+        height: 250px;
+    }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoflegrea - Servizi</title>
+    <meta name="description" content="Servizi Tecnoflegrea: impianti elettrici, automazioni, cancelli automatici, citofoni e pronto intervento a Napoli e nei Campi Flegrei.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div id="header-logo">
+        <img src="../immagini/logo-tecnoflegrea.svg" alt="Logo Tecnoflegrea" class="logo-grande">
+    </div>
+
+    <nav id="menu-principale">
+        <a href="../index.html">Home</a>
+        <a href="azienda.html">Azienda</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+</header>
+
+<main>
+    <section class="servizi-intro animazione">
+        <h1>I nostri servizi</h1>
+        <p>
+            Offriamo soluzioni professionali per condomini, aziende e privati,
+            garantendo qualità, affidabilità e interventi rapidi.
+        </p>
+    </section>
+
+    <section class="servizi-container animazione">
+        <div class="servizio-card">
+           <!-- da inserire  e modificare all'occorrenza  <img src="../immagini/impianto1.jpg" alt="Impianti elettrici">  -->
+            <div class="icona"><i class="fas fa-bolt"></i></div>
+            <h3>Impianti elettrici</h3>
+            <p>Realizzazione, rifacimento e manutenzione di impianti elettrici per abitazioni, condomini e attività.</p>
+        </div>
+
+        <div class="servizio-card">
+            <!-- da inserire  e modificare all'occorrenza  <img src="../immagini/impianto1.jpg" alt="Impianti elettrici">  -->
+            <div class="icona"><i class="fas fa-tools"></i></div>
+            <h3>Manutenzione</h3>
+            <p>Interventi programmati e straordinari per mantenere gli impianti efficienti e sicuri nel tempo.</p>
+        </div>
+
+        <div class="servizio-card">
+            <!-- da inserire  e modificare all'occorrenza  <img src="../immagini/impianto1.jpg" alt="Impianti elettrici">  -->
+            <div class="icona"><i class="fas fa-lightbulb"></i></div>
+            <h3>Illuminazione</h3>
+            <p>Installazione e sostituzione di luci per scale, garage, cortili e spazi comuni.</p>
+        </div>
+
+        <div class="servizio-card">
+            <!-- da inserire  e modificare all'occorrenza  <img src="../immagini/impianto1.jpg" alt="Impianti elettrici">  -->
+            <div class="icona"><i class="fas fa-exclamation-triangle"></i></div>
+            <h3>Pronto intervento</h3>
+            <p>Disponibilità per guasti urgenti, riparazioni rapide e assistenza tecnica tempestiva.</p>
+        </div>
+
+        <div class="servizio-card">
+            <!-- da inserire  e modificare all'occorrenza  <img src="../immagini/impianto1.jpg" alt="Impianti elettrici">  -->
+            <div class="icona"><i class="fas fa-plug"></i></div>
+            <h3>Automazioni</h3>
+            <p>Installazione e manutenzione di cancelli automatici, citofoni, videocitofoni e sistemi di accesso.</p>
+        </div>
+
+        <div class="servizio-card">
+            <!-- da inserire  e modificare all'occorrenza  <img src="../immagini/impianto1.jpg" alt="Impianti elettrici">  -->
+            <div class="icona"><i class="fas fa-clipboard-check"></i></div>
+            <h3>Adeguamenti a norma</h3>
+            <p>Messa a norma degli impianti secondo le normative vigenti, con attenzione a sicurezza e affidabilità.</p>
+        </div>
+    </section>
+
+    <section class="lavori animazione">
+        <h2>I nostri lavori</h2>
+        <p class="testo-sezione">
+            Alcuni esempi di interventi e installazioni realizzati da Tecnoflegrea.
+        </p>
+
+        <div class="lavori-grid">
+            <img src="../immagini/cancello messo a norma.jpg" alt="Cancello messo a norma">
+            <img src="../immagini/lampione.jpeg" alt="Impianto di illuminazione esterna">
+            <img src="../immagini/cancello.jpg" alt="Cancello automatico installato">
+            <img src="../immagini/citofono.jpg" alt="Impianto citofonico">
+        </div>
+    </section>
+
+    <section class="cta-servizi animazione">
+        <h2>Hai bisogno di un intervento?</h2>
+        <p>Contattaci per ricevere assistenza o richiedere un preventivo gratuito.</p>
+        <a href="contatti.html" class="btn">Contattaci</a>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-contenuto">
+        <p>© 2026 Tecnoflegrea</p>
+    </div>
+</footer>
+
+<script>
+const elementi = document.querySelectorAll('.animazione');
+
+function mostraElementi() {
+    elementi.forEach(el => {
+        const posizione = el.getBoundingClientRect().top;
+        const altezzaSchermo = window.innerHeight;
+
+        if (posizione < altezzaSchermo - 100) {
+            el.classList.add('attiva');
+        }
+    });
+}
+
+window.addEventListener('scroll', mostraElementi);
+window.addEventListener('load', mostraElementi);
+</script>
+
+</body>
+</html>

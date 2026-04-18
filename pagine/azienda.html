@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoflegrea</title>
+    <meta name="description" content="Scopri Tecnoflegrea: esperienza, affidabilità e professionalità nel settore delle automazioni e degli impianti elettrici a Napoli e nei Campi Flegrei.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body>
+
+<!-- ============================ -->
+<!-- HEADER: Logo + Menu -->
+<!-- ============================ -->
+<header>
+    <div id="header-logo">
+        <img src="../immagini/logo-tecnoflegrea.svg" alt="Logo Tecnoflegrea" class="logo-grande">
+    </div>
+
+    <nav id="menu-principale">
+        <a href="../index.html">Home</a>
+        <a href="azienda.html">Azienda</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+</header>
+
+<main>
+   <!-- ============================ -->
+   <!-- SEZIONE INTRODUZIONE AZIENDA -->
+   <!-- ============================ -->
+    <section id="intro-azienda">
+        <h1>Chi siamo</h1>
+        <p>
+Tecnoflegrea opera nel settore delle automazioni e degli impianti elettrici,
+offrendo servizi di installazione, manutenzione e assistenza tecnica
+per abitazioni, aziende e condomini.
+</p>
+
+<p>
+Grazie all'esperienza maturata negli anni, Tecnoflegrea è diventata
+un punto di riferimento nel territorio per la realizzazione
+di cancelli automatici, impianti citofonici, sistemi di sicurezza
+e impianti elettrici.
+</p>
+
+<p>
+Il nostro obiettivo è offrire soluzioni affidabili, sicure
+e durature nel tempo, garantendo sempre professionalità
+e assistenza ai nostri clienti.
+</p>
+    </section>
+
+    <section id="azienda-gallery">
+    <h2>La nostra struttura</h2>
+    <div class="gallery-azienda">
+        <img src="../immagini/revisione-motore.jpg" alt="Manutenzione motore cancello automatico">
+        <img src="../immagini/laboratorio.jpg" alt="Officina e attrezzature">
+        <img src="../immagini/furgone.jpg" alt="Mezzi e strumenti">
+        <img src="../immagini/operaio.jpg" alt="Tecnico al lavoro">
+    </div>
+</section>
+
+    <!-- ============================ -->
+    <!-- SEZIONE VALORI E PUNTI DI FORZA -->
+    <!-- ============================ -->
+    <section id="valori-azienda">
+        <h2>I nostri valori</h2>
+        <div class="vantaggi-container">
+            <div class="vantaggio">
+                <h3>Esperienza</h3>
+                <p>Tecnici qualificati con esperienza nel settore delle automazioni e degli impianti elettrici.</p>
+            </div>
+            <div class="vantaggio">
+                <h3>Affidabilità</h3>
+                <p>Interventi puntuali, lavorazioni accurate  e soluzioni professionali per ogni esigenza.</p>
+            </div>
+            <div class="vantaggio">
+                <h3>Innovazione</h3>
+                <p>Utilizziamo tecnologie moderne e componenti di qualità per realizzare impianti efficienti e sicuri.</p>
+            </div>
+        </div>
+    </section>
+   <section id="cta-azienda" class="animazione">
+        <h2>Vuoi maggiori informazioni sui nostri servizi?</h2>
+        <p>
+            Scopri tutte le soluzioni offerte da Tecnoflegrea oppure contattaci
+            per ricevere assistenza e un preventivo.
+        </p>
+        <a href="servizi.html" class="btn">Scopri i servizi</a>
+    </section>  
+
+</main>
+
+<!-- ============================ -->
+<!-- FOOTER -->
+<!-- ============================ -->
+<footer>
+    <div class="footer-contenuto">
+        <p>© 2026 Tecnoflegrea</p>
+        
+        
+    </div>
+</footer>
+
+<script>
+const elementi = document.querySelectorAll('.animazione');
+
+function mostraElementi() {
+    elementi.forEach(el => {
+        const posizione = el.getBoundingClientRect().top;
+        const altezzaSchermo = window.innerHeight;
+
+        if (posizione < altezzaSchermo - 100) {
+            el.classList.add('attiva');
+        }
+    });
+}
+
+window.addEventListener('scroll', mostraElementi);
+window.addEventListener('load', mostraElementi);
+</script>
+
+</body>
+</html>

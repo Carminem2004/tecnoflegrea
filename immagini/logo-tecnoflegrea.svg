@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-1);
+        font-family: HemiHeadRg-BoldItalic, 'Hemi Head';
+        font-size: 97.03px;
+        font-style: italic;
+        font-weight: 700;
+        letter-spacing: .02em;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="6.26" dy="6.26"/>
+      <feGaussianBlur result="blur" stdDeviation="6.26"/>
+      <feFlood flood-color="#000" flood-opacity=".6"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Livello_1">
+      <g id="_x32_">
+        <circle class="cls-2" cx="663.71" cy="540.13" r="184.05"/>
+      </g>
+      <rect class="cls-2" x="697.71" y="546.14" width="722" height="88.73" rx="30" ry="30"/>
+      <rect class="cls-2" x="713.71" y="542.13" width="727" height="95" rx="30" ry="30"/>
+      <path d="M669.13,381.39c-82.89-1.24-153.28,62.51-159.23,146.23-4.78,67.18,33.34,127.51,91.08,154.15l-7.9-22.51,20.43-3.33c-48.33-21.48-80.39-71.53-76.42-127.33,4.89-68.78,62.74-121.15,130.85-120.09l10.92-10.83-9.72-16.29Z"/>
+      <polygon points="703.77 399.22 656.09 370.28 665.67 395.12 651.03 417.37 703.77 399.22"/>
+      <path class="cls-1" d="M626.21,650.63,674.03,628.36c-15.18,65.73,59.87,21.54,59.87,21.54,39.57-21.58,65.3-63.26,65.3-111.94,0-58.42-39.02-107.73-92.41-123.28l18.11-9.05-7.53-16.66c63.14,20.1,108.87,79.21,108.87,149,0,54.17-27.55,101.9-69.4,129.95,0,0-44.63,32.71-100.63,26.71,0,0-39.99.94-30.49-44.03M670.21,649.63"/>
+      <path class="cls-1" d="M625.72,650.6l33-156.1h-47.06l8.04-38.16h138.02l-8.03,38.16h-47.35l-28.3,133.87"/>
+      <rect class="cls-2" x="736.71" y="549.13" width="110" height="82"/>
+      <text class="cls-3" transform="translate(703.71 623.72) scale(1.04 1)"><tspan x="0" y="0">ECNOFLEGREA</tspan></text>
+    </g>
+  </g>
+</svg>

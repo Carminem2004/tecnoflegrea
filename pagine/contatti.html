@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoflegrea - Contatti</title>
+    <meta name="description" content="Contatta Tecnoflegrea per assistenza, manutenzione o preventivi su impianti elettrici, cancelli automatici e automazioni a Napoli e nei Campi Flegrei.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div id="header-logo">
+        <img src="../immagini/logo-tecnoflegrea.svg" alt="Logo Tecnoflegrea" class="logo-grande">
+    </div>
+
+    <nav id="menu-principale">
+        <a href="../index.html">Home</a>
+        <a href="azienda.html">Azienda</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+</header>
+
+<main>
+    <section id="contatti-intro">
+        <h1>Richiedi assistenza o un preventivo</h1>
+        <p>
+            Contatta Tecnoflegrea per interventi su cancelli automatici,
+            impianti elettrici, citofoni, videocitofoni e automazioni.
+        </p>
+    </section>
+
+    <section id="contatto-principale" class="animazione">
+        <div class="contatto-evidenza">
+            <div class="contatto-icona grande">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <h2>Il modo più rapido per contattarci</h2>
+            <p>
+                Scrivici su WhatsApp per ricevere assistenza rapida
+                o richiedere un preventivo gratuito.
+            </p>
+            <a href="https://wa.me/393337295271?text=Salve,%20vorrei%20ricevere%20informazioni%20su%20un%20intervento"
+               target="_blank"
+               class="btn-whatsapp">
+               <i class="fab fa-whatsapp"></i> Scrivici su WhatsApp
+            </a>
+            <p class="nota-contatto">   
+                Ti risponderemo il prima possibile.
+            </p>
+        </div>
+    </section>
+
+    <section id="contatti-secondari" class="animazione">
+        <div class="contatti-container">
+            <div class="contatto-item">
+                <div class="contatto-icona">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h2>Telefono</h2>
+                <p><a href="tel:+393337295271">333 729 5271</a></p>
+            </div>
+
+            <div class="contatto-item">
+                <div class="contatto-icona">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h2>Email</h2>
+                <p><a href="mailto:carminem2004@gmail.com">carminem2004@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="orari-contatti" class="animazione">
+        <h2>Assistenza per privati, aziende e condomini</h2>
+        <p>
+            Offriamo interventi rapidi e soluzioni professionali
+            per impianti elettrici, automazioni e sistemi di accesso.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-contenuto">
+        <p>© 2026 Tecnoflegrea</p>
+    </div>
+</footer>
+<script>
+const elementi = document.querySelectorAll('.animazione');
+
+function mostraElementi() {
+    elementi.forEach(el => {
+        const posizione = el.getBoundingClientRect().top;
+        const altezzaSchermo = window.innerHeight;
+
+        if (posizione < altezzaSchermo - 100) {
+            el.classList.add('attiva');
+        }
+    });
+}
+
+window.addEventListener('scroll', mostraElementi);
+window.addEventListener('load', mostraElementi);
+</script>
+
+
+</body>
+</html>
