@@ -675,21 +675,21 @@ footer {
     #header-logo {
         background: #000;
         height: auto;
-        padding: 18px 10px;
+        padding: 12px 10px;
         overflow: visible;
     }
 
     .logo-grande {
         display: block;
-        width: 92%;
-        max-width: 340px;
+        width: 88%;
+        max-width: 330px;
         height: auto;
         max-height: none;
         margin: 0 auto;
     }
 
     #menu-principale {
-        padding: 10px 0;
+        padding: 8px 0 12px;
     }
 
     #menu-principale a {
