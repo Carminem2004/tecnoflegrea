@@ -672,13 +672,27 @@ footer {
 /* ==================== */
 @media (max-width: 768px) {
     #header-logo {
-        height: 220px;
+        background: transparent;
+        height: auto;
+        padding: 20px 10px 10px;
+        overflow: visible;
     }
 
     .logo-grande {
-        max-height: 170px;
-        max-width: 90%;
-        width: auto;
+        display: block;
+        width: 85%;
+        max-width: 85%;
+        height: auto;
+        margin: 0 auto;
+    }
+#menu-principale {
+        padding: 8px 0;
+    }
+
+    #menu-principale a {
+        display: inline-block;
+        margin: 6px 8px;
+        font-size: 15px;
     }
 
     #menu-principale a {
