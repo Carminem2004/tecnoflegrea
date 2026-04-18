@@ -671,28 +671,14 @@ footer {
 /* RESPONSIVE           */
 /* ==================== */
 @media (max-width: 768px) {
-    #header-logo {
-        background: transparent;
-        height: auto;
-        padding: 20px 10px 10px;
-        overflow: visible;
+     #header-logo {
+        height: 220px;
     }
 
     .logo-grande {
-        display: block;
-        width: 200%;
-        max-width: 200%;
-        height: auto;
-        margin: 0 auto;
-    }
-#menu-principale {
-        padding: 8px 0;
-    }
-
-    #menu-principale a {
-        display: inline-block;
-        margin: 6px 8px;
-        font-size: 15px;
+        max-height: 170px;
+        max-width: 90%;
+        width: auto;
     }
 
     #menu-principale a {
