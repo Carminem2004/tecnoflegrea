@@ -672,24 +672,21 @@ footer {
 /* ==================== */
 @media (max-width: 768px) {
     
-   #header-logo {
-    background: #000;
-    height: auto !important;
-    padding: 6px 2px !important;
-    overflow: hidden !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    #header-logo {
+        background: #ffffff;
+        height: auto;
+        padding: 12px 10px;
+        overflow: visible;
+    }
 
-.logo-grande {
-    display: block !important;
-    height: 90px !important;
-    width: auto !important;
-    max-width: 95% !important;
-    max-height: none !important;
-    margin: 0 auto !important;
-}
+    .logo-grande {
+        display: block;
+        width: 88%;
+        max-width: 330px;
+        height: auto;
+        max-height: none;
+        margin: 0 auto;
+    }
 
     #menu-principale {
         padding: 8px 0 12px;
