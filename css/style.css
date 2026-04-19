@@ -672,19 +672,14 @@ footer {
 /* ==================== */
 @media (max-width: 768px) {
     
+    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     #header-logo {
-        background: #000;
-        height: auto;
-        padding: 5px 5px;
-        overflow: visible;
+        border: 3px solid red;
     }
 
     .logo-grande {
-        display: block;
-        width: 94%;
-        max-width: 380px;
-        height: auto;
-        margin: 0 auto;
+        border: 3px solid yellow;
     }
 
     #menu-principale {
