@@ -72,8 +72,9 @@ ul {
 }
 
 .logo-grande {
-    max-height: 250%;
+    max-height: 220px;
     width: auto;
+    max-width: 95%;
 }
 
 #menu-principale {
@@ -675,7 +676,7 @@ footer {
    #header-logo {
     background: #000;
     height: auto !important;
-    padding: 6px 0 !important;
+    padding: 6px 2px !important;
     overflow: hidden !important;
     display: flex;
     align-items: center;
@@ -684,7 +685,7 @@ footer {
 
 .logo-grande {
     display: block !important;
-    height: 95px !important;
+    height: 90px !important;
     width: auto !important;
     max-width: 95% !important;
     max-height: none !important;
