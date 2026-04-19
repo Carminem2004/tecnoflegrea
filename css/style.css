@@ -671,22 +671,28 @@ footer {
 /* RESPONSIVE           */
 /* ==================== */
 @media (max-width: 768px) {
+
+    header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
     
     #header-logo {
-        background: #ffffff;
-        height: auto;
+        background: #000;
+        height: 80px;
         padding: 5px 10px;
         overflow: visible;
     }
 
     .logo-grande {
-        display: block;
-        width: 88%;
-        max-width: 330px;
-        height: auto;
-        max-height: none;
-        margin: 0 auto;
-    }
+    display: block;
+    width: 72%;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto;
+}
 
     #menu-principale {
         padding: 8px 0 12px;
