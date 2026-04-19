@@ -72,7 +72,8 @@ ul {
 }
 
 .logo-grande {
-    max-height: 250%;
+    max-height: 90%;
+    max-width: 90%;
     width: auto;
 }
 
@@ -672,13 +673,24 @@ footer {
 /* ==================== */
 @media (max-width: 768px) {
     
-    #header-logo {
-        border: 3px solid red;
-    }
+   #header-logo {
+    background: #000;
+    height: auto !important;
+    padding: 6px 0 !important;
+    overflow: hidden !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .logo-grande {
-        border: 3px solid yellow;
-    }
+.logo-grande {
+    display: block !important;
+    height: 95px !important;
+    width: auto !important;
+    max-width: 95% !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+}
 
     #menu-principale {
         padding: 8px 0 12px;
