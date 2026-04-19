@@ -72,9 +72,8 @@ ul {
 }
 
 .logo-grande {
-    max-height: 220px;
+    max-height: 230%;
     width: auto;
-    max-width: 95%;
 }
 
 #menu-principale {
