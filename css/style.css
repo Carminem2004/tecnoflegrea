@@ -675,16 +675,15 @@ footer {
     #header-logo {
         background: #000;
         height: auto;
-        padding: 12px 10px;
+        padding: 8px 10px 6px;
         overflow: visible;
     }
 
     .logo-grande {
         display: block;
-        width: 88%;
-        max-width: 330px;
+        width: 94%;
+        max-width: 360px;
         height: auto;
-        max-height: none;
         margin: 0 auto;
     }
 
